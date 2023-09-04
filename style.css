@@ -1,0 +1,656 @@
+/* SECTION UTILITIES  */
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+html {
+    --netflix-red: #e50914;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #000;
+    margin: 0;
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+section {
+    border-bottom: 0.5rem solid #222;
+    padding: 50px 5%;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION Styling of Body */
+
+/* SECTION NAV BAR */
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #fff;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    justify-items: stretch;
+    padding: 1.25rem 0.5rem;
+    background-color: transparent;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.nav-links button {
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: var(--netflix-red);
+    font-size: 1rem;
+    width: max-content;
+    cursor: pointer;
+}
+
+/* !SECTION */
+
+
+/* SECTION HERO PAGE  */
+
+.hero-container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* NOTE Background Image for Hero Page */
+
+.bgi {
+    width: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000066;
+    background-image: linear-gradient(0deg, #000000cc 0, transparent 60%, #000000cc);
+    height: 100%;
+    background-size: cover;
+    color: white;
+}
+
+.bgi img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-page {
+    box-sizing: border-box;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    padding: 5.5rem 1rem 2rem;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+.hero-text h1 {
+    max-width: 650px;
+    overflow: visible;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-text h3 {
+    max-width: 650px;
+    font-size: 1.1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.hero-text p {
+    max-width: 450px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+}
+
+/* NOTE Email and Button Styling */
+/* TODO style the input so the email placeholder is absolute when active */
+
+.hero-form {
+    display: inline-block;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.hero-form input {
+    width: 98.5%;
+    padding: 1rem 1rem 0;
+    margin: 0.1rem 0 1rem;
+    box-sizing: border-box;
+    margin-right: 0;
+    height: 50px;
+    background-color: #fff;
+}
+
+
+.hero-form button {
+    background-color: var(--netflix-red);
+    margin-left: 0;
+    border: none;
+    box-sizing: border-box;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 0.1rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    width: max-content;
+    cursor: pointer;
+}
+
+.hero-form form {
+    display: flex;
+    width: 950px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 2: ENJOY ON TV  */
+
+.tvs {
+    text-align: center;
+}
+
+.smart-tvs h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+.smart-tvs p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0 0 0.8rem;
+}
+
+.tv-img {
+    margin: auto;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 45rem;
+}
+
+.tv-img img {
+    z-index: 10;
+    width: 100%;
+}
+
+.tv-img video {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 3: OFFLINE DOWNLOAD */
+
+.download-info {
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.download-info h2 {
+    font-size: 1.62rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+.download-info p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0 0 0.8rem;
+}
+
+.download-img {
+    width: 45em;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.eleven {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.offline {
+    width: 70%;
+    background-color: #000;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+.img-1 {
+    flex-basis: 20%;
+    margin-right: 0.5rem;
+}
+
+.img-1 img {
+    width: 50px;
+}
+
+.downloading {
+    flex-basis: 60%;
+    font-size: 0.5rem;
+}
+
+.downloading p:last-child {
+    color: #00f;
+}
+
+.gif img {
+    width: 50px;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 4. WATCH EVERYWHERE */
+
+.watch-tv {
+    text-align: center;
+}
+
+.watch h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+.watch p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0 0 0.8rem;
+}
+
+.watch-img {
+    margin: auto;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 45rem;
+}
+
+.watch-img img {
+    z-index: 10;
+    width: 100%;
+}
+
+.watch-img video {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    bottom: 18%;
+    left: 17%;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 5. KIDS PROFILE */
+
+.kids {
+    text-align: center;
+}
+
+.kids-profile h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+.kids-profile p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin: 0 0 0.8rem;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 6. FAQ */
+
+.faq-container {
+    width: 100%;
+    padding: 3.125rem 0;
+}
+
+.faq-membership {
+    width: min(100%, 550px);
+    margin: auto;
+}
+
+.faq-section h2 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+    padding: 0 1.125rem;
+}
+
+details {
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+details p {
+    font-size: 1.125rem;
+}
+
+summary {
+    padding: 16px 44px 16px 22px;
+    font-size: 1.125rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: height 1s ease;
+}
+
+summary:after {
+    content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.5em;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
+
+details[open] p {
+    padding: 1.125em;
+}
+
+.faq-section,
+.membership-email {
+    text-align: center;
+}
+
+.membership-email p {
+    font-size: 1.125rem;
+    max-width: 450px;
+    font-weight: 400;
+    margin: 1.5rem auto;
+    padding: 0 5%;
+}
+
+.membership-email input {
+    width: min(90%, 450px);
+}
+
+/* !SECTION */
+
+
+
+/* SECTION FEATURE 7. FOOTER */
+
+footer {
+    background-color: #000;
+    color: #aaa;
+    padding: 50px 5% 0;
+    width: min(100%, 549px);
+    margin: 0 auto;
+}
+
+.footer-text h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.footer-links {
+    margin-top: 0.1rem;
+}
+
+.footer-links ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+.footer-links ul li a {
+    color: #aaa;
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-country {
+    margin: 2rem 0 2rem;
+}
+
+.footer-country p {
+    color: #aaa;
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* !SECTION */
+
+
+
+/* SECTION MEDIA QUERIES  */
+
+/* ANCHOR max width 350px */
+
+@media (max-width:350px) {
+    .footer-links ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* /////////////////////////////////////////////// */
+
+/* ANCHOR min width 550px */
+
+@media (min-width: 550px) {
+    html {
+        --netflix-red: #e50914;
+    }
+
+    .nav-bar {
+        padding: 1.25rem 3rem;
+    }
+
+    section {
+        padding: 70px 45px;
+    }
+
+    .container h1 {
+        font-size: 3.125rem;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    .container h3 {
+        font-size: 1.625rem;
+    }
+
+    .container p {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .hero-text p {
+        font-size: 23px;
+    }
+
+    .hero-page {
+        padding: 70px 0;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+    .faq-membership {
+        box-sizing: border-box;
+        width: min(80%, 850px);
+    }
+
+    .membership-email p {
+        font-size: 1.125rem;
+        padding: 0 9%;
+    }
+
+    .membership-email input {
+        width: min(80%, 450px);
+    }
+}
+
+/* /////////////////////////////////////////////// */
+
+/* ANCHOR min width 950px */
+
+@media (min-width: 950px) {
+
+    .hero-form form {
+        flex-direction: row;
+    }
+
+    .hero-form input {
+        height: 60px;
+    }
+
+    .hero-form button {
+        flex-basis: 30%;
+        padding: 0 1rem 0;
+        margin: 0.1rem 0 1rem;
+        box-sizing: border-box;
+        margin-right: 0;
+        height: 60px;
+    }
+
+    .hero-container {
+        height: min(110%, 950px);
+    }
+
+    .hero-page {
+        max-width: 1000px;
+    }
+
+    .hero-text p {
+        max-width: 950px;
+    }
+
+    .tvs,
+    .offline-download,
+    .watch-tv,
+    .kids {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        text-align: left;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .download-img,
+    .kids-img {
+        grid-row: 1 / 2;
+    }
+
+    .offline-container .download-info {
+        text-align: left;
+    }
+
+    details {
+        padding: 0.5rem 1rem;
+    }
+
+    summary {
+        font-size: 1.7rem;
+
+    }
+
+    .faq-membership {
+        box-sizing: border-box;
+        width: min(75%, 850px);
+    }
+
+    .membership-email p {
+        max-width: 950px;
+    }
+
+    footer {
+        width: min(75%, 850px);
+    }
+
+    .footer-links ul {
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+}
+
+/* !SECTION */
+/* !SECTION */
